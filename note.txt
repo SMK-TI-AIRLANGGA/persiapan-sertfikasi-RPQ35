@@ -1,0 +1,7 @@
+note
+
+Landing page perpusatakaan
+
+-list buku
+-login / regis page
+-peminjaman
