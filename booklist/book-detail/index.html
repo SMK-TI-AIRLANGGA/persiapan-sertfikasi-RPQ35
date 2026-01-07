@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpus</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+    <header class="bg-green-400 width-full h-16 flex flex-row justify-between">
+      <section class="w-64 h-full flex justify-evenly flex-row items-center">
+        <i class="fa-duotone fa-solid fa-book-open text-6xl"></i>
+        <h1 class="text-3xl font-serif font-semibold flex flex-row">
+          <p>Per</p>
+          <p class="underline decoration-double">pus</p>
+        </h1>
+      </section>
+      <nav
+        class="h-full w-98 text-center flex flex-row align-center justify-evenly font-mono text-xl font-normal"
+      >
+        <a class="flex flex-row align-bottom" href="/home/"
+          ><button class="hover:bg-green-300 rounded-full p-2 w-28">
+            Home
+          </button></a
+        >
+        <a class="flex flex-row align-bottom" href="/booklist/"
+          ><button class="hover:bg-green-300 rounded-full p-2 w-28">
+            BookList
+          </button></a
+        >
+        <a class="flex flex-row align-bottom bg-slate-300 rounded" href="/login"
+          ><button class="hover:bg-green-300 rounded-full p-2">Login</button></a
+        >
+      </nav>
+    </header>
+    <!--  -->
+    <main class="w-full bg-slate-100">
+      <!--  -->
+      <article class="bg-stone-100 w-screen h-screen flex flex-col gap-10 p-4">
+        <section class="w-full h-[60%]">
+          <div
+            class="float-left h-full w-[35%] border-4 rounded-lg border-slate-300 flex flex-col justify-center items-center"
+          >
+            <i class="fa-solid fa-book text-9xl"></i>
+          </div>
+          <div
+            class="float-right bg-stone-100 h-full w-[65%] py-5 pl-5 flex flex-col justify-around"
+          >
+            <h2 class="text-2xl font-serif font-semibold text-center">
+              Buku petantang petenteng
+            </h2>
+            <div class="flex flex-col justify-ea">
+              <h4 class="font-serif text-xl">Rahmat sugiono</h4>
+              <h4 class="font-serif text-xl">Buku Motivasi</h4>
+              <h4 class="font-serif text-xl">23/01/2011</h4>
+            </div>
+            <button
+              class="w-24 h-10 bg-yellow-200 border-2 border-stone-300 rounded-full font-mono font-semibold cursor-pointer hover:bg-yellow-100 active:bg-green-300"
+              onclick="pinjam()"
+            >
+              Pinjam
+            </button>
+          </div>
+        </section>
+        <section class="w-full h-[35%]">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            ullam quo maiores ipsa iusto, reiciendis aperiam rerum enim laborum
+            voluptatem consectetur harum voluptas molestiae eligendi tempora
+            dolorem! Praesentium, totam perspiciatis! Labore reiciendis rem
+            tempora animi eos excepturi maiores, porro saepe quisquam nesciunt
+            dignissimos vitae voluptatem expedita iste at molestias eligendi
+            nisi praesentium perferendis libero? Cumque, accusamus? Culpa ipsa
+            perspiciatis similique! Dicta eum modi dolorum veniam aspernatur,
+            accusamus minus voluptatibus, placeat pariatur quas repellat
+            voluptate magnam reprehenderit praesentium. Nostrum molestiae vitae
+            sequi, laborum doloremque ipsa, et provident voluptates sint dolores
+            quidem. Nihil impedit quod aut doloremque perspiciatis et placeat
+            atque nisi ipsum officiis hic, consectetur illum voluptates
+            architecto recusandae quae, minima corrupti incidunt. Enim rem
+            labore, nihil placeat commodi eligendi atque.
+          </p>
+        </section>
+      </article>
+      <!--  -->
+    </main>
+    <!--  -->
+    <footer class="w-full h-12 bg-green-400 mt-10"></footer>
+
+    <div
+      id="Login_pinjam"
+      class="fixed w-84 h-84 bg-yellow-500 top-50 left-120 border-20 border-stone-200 rounded-2xl opacity-90 flex flex-col justify-evenly items-center hidden"
+    >
+      <span class="font-sans font-bold text-2xl break-normal w-48"
+        >Anda harus login untuk bisa meminjam buku</span
+      >
+      <button
+        class="w-24 h-10 bg-red-500 border-2 border-stone-300 rounded-full font-mono font-semibold cursor-pointer hover:bg-red-400 active:bg-green-300"
+        onclick="window.location.href='/login'"
+      >
+        Login
+      </button>
+    </div>
+    <!--  -->
+    <script src="/booklist/book-detail/script.js"></script>
+    <!--  -->
+  </body>
+</html>

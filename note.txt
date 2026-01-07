@@ -5,3 +5,4 @@ Landing page perpusatakaan
 -list buku
 -login / regis page
 -peminjaman
+-footer 20
