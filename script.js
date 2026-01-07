@@ -1,6 +1,11 @@
+
 function showPage(pageNumber) {
+  var size =8;
+  if(window.innerWidth<728){size=6;}
+
     const items = document.querySelectorAll('.obj');
-    const itemsPerPage = 8;
+    const itemsPerPage = size;
+    
     
     // Calculate our bounds
     const start = (pageNumber - 1) * itemsPerPage;
